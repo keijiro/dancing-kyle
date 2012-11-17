@@ -14,6 +14,6 @@ function Awake() {
 }
 
 function Update() {
-	transform.localPosition = initialPosition + Vector3.up * (Mathf.Sin(Mathf.PI * 2.0 * freq * Time.time) * width);
+	transform.localPosition = initialPosition + Vector3.up * (Mathf.Cos(Mathf.PI * 2.0 * freq * Time.time) * width);
 	transform.localRotation = Quaternion.AngleAxis(Mathf.Sin(Mathf.PI * 2.0 * shakeFreq * Time.time) * shakeWidth, Vector3.right) * initialRotation;
 }
