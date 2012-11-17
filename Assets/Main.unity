@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   bpm: 128
   fadeSpeed: 4
-  flags: 00000000
+  flags: 00000001
   levels:
   - 0
   - 0
@@ -564,8 +564,6 @@ Transform:
   - {fileID: 1586215779}
   - {fileID: 1914875265}
   - {fileID: 930972789}
-  - {fileID: 900750530}
-  - {fileID: 1590196502}
   - {fileID: 86499641}
   m_Father: {fileID: 1254256091}
 --- !u!1 &258107528
@@ -938,7 +936,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665077521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .400000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1590196502}
@@ -1285,7 +1283,7 @@ GameObject:
   - 4: {fileID: 900750530}
   - 114: {fileID: 900750531}
   m_Layer: 0
-  m_Name: Left Arm Swinger
+  m_Name: Left Arm Swing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1297,12 +1295,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 900750529}
-  m_LocalRotation: {x: -.111618981, y: -.133022189, z: .754406214, w: -.633022606}
-  m_LocalPosition: {x: -.400000006, y: 0, z: .25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.349999994, y: 1.29999995, z: .0500000007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1205571710}
-  m_Father: {fileID: 245265305}
+  m_Father: {fileID: 1789835317}
 --- !u!114 &900750531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,8 +1311,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 822c05b159ec347bcb04b0786384ee7d, type: 3}
   m_Name: 
-  freq: 1
-  degree: 50
+  width: 45
+  freq: .5
 --- !u!1 &930972788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1673,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205571709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .300000012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 900750530}
@@ -2168,7 +2166,7 @@ GameObject:
   - 4: {fileID: 1590196502}
   - 114: {fileID: 1590196503}
   m_Layer: 0
-  m_Name: Right Arm Swinger
+  m_Name: Right Arm Swing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2180,12 +2178,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590196501}
-  m_LocalRotation: {x: .111618981, y: .133022189, z: .754406214, w: -.633022606}
-  m_LocalPosition: {x: -.400000006, y: 0, z: -.25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .349999994, y: 1.29999995, z: .0500000007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 665077522}
-  m_Father: {fileID: 245265305}
+  m_Father: {fileID: 1789835317}
 --- !u!114 &1590196503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,8 +2194,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 822c05b159ec347bcb04b0786384ee7d, type: 3}
   m_Name: 
-  freq: 1
-  degree: 50
+  width: 45
+  freq: .600000024
 --- !u!1 &1614914164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,8 +2275,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 900750530}
   - {fileID: 1361830283}
   - {fileID: 258107529}
+  - {fileID: 1590196502}
   - {fileID: 2056497573}
   m_Father: {fileID: 0}
 --- !u!1 &1795992124
