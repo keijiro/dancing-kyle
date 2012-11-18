@@ -10,18 +10,20 @@ var showInfo = false;
 
 var switchStyle : GUIStyle;
 
-private var startTime = 0.0;
+function Awake() {
+	audio.clip = AudioClip.Create("(null)", 0xfffffff, 1,
+                                  AudioSettings.outputSampleRate, false, true,
+                                  function(data:float[]){});
+}
 
 function Start() {
 	yield WaitForSeconds(1.0);
-	startTime = Time.time;
+    audio.Play();	
 	GameObject.Find("Audio Tracks").BroadcastMessage("StartPlay");
 }
 
 function Update() {
-	if (startTime > 0.0) {
-		position = (Time.time - startTime) * bpm / 60.0;
-	}
+	position = audio.time * bpm / 60.0;
 
 	var fadeDelta = fadeSpeed * Time.deltaTime;
 	for (var i = 0; i < 4; i++) {

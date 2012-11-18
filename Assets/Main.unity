@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e47151998294d969dd345102c25357, type: 3}
   m_Name: 
   width: 50
-  ahead: -.100000001
+  ahead: .100000001
 --- !u!1 &89899995
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +434,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 159236773}
   - 114: {fileID: 159236774}
+  - 82: {fileID: 159236775}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -531,6 +532,62 @@ MonoBehaviour:
     m_FixedHeight: 32
     m_StretchWidth: 0
     m_StretchHeight: 0
+--- !u!82 &159236775
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159236772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &193860507
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987e074a502994c2bb1ff9f50aeb102e, type: 3}
   m_Name: 
   pumpWidth: .200000003
-  pumpAhead: .180000007
+  pumpAhead: .25999999
   shakeWidth: 30
   shakeFreq: .800000012
 --- !u!33 &421360919
