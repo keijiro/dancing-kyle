@@ -33,13 +33,15 @@ GameManager:
 LightmapSettings:
   m_ObjectHideFlags: 0
   m_LightProbes: {fileID: 0}
-  m_Lightmaps: []
+  m_Lightmaps:
+  - m_Lightmap: {fileID: 2800000, guid: c4c60df1e84c948c18f3f88704c70159, type: 3}
+    m_IndirectLightmap: {fileID: 0}
   m_LightmapsMode: 0
   m_BakedColorSpace: 0
   m_UseDualLightmapsInForward: 0
   m_LightmapEditorSettings:
-    m_Resolution: 10
-    m_LastUsedResolution: 10
+    m_Resolution: 20
+    m_LastUsedResolution: 20
     m_TextureWidth: 1024
     m_TextureHeight: 1024
     m_BounceBoost: 1
@@ -52,8 +54,8 @@ LightmapSettings:
     m_FinalGatherContrastThreshold: .0500000007
     m_FinalGatherGradientThreshold: 0
     m_FinalGatherInterpolationPoints: 15
-    m_AOAmount: .453000009
-    m_AOMaxDistance: .100000001
+    m_AOAmount: 1
+    m_AOMaxDistance: .300000012
     m_AOContrast: 1
     m_LODSurfaceMappingDistance: 1
     m_Padding: 0
@@ -899,7 +901,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -1581,7 +1583,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967039
-  m_Lightmapping: 1
+  m_Lightmapping: 0
   m_ShadowSamples: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4418,9 +4420,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1985940889}
   - {fileID: 1042216141}
   - {fileID: 941818431}
+  - {fileID: 1985940889}
   m_Father: {fileID: 0}
 --- !u!1 &1356375567
 GameObject:
@@ -4603,8 +4605,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: .390625, y: .390625, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 98065b6b773324b2189ba8783a380a91, type: 2}
   m_SubsetIndices: 
@@ -5006,7 +5008,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967039
-  m_Lightmapping: 1
+  m_Lightmapping: 0
   m_ShadowSamples: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6495,7 +6497,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -6546,7 +6548,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -6639,6 +6641,7 @@ GameObject:
   - 124: {fileID: 2060879947}
   - 81: {fileID: 2060879946}
   - 114: {fileID: 2060879951}
+  - 114: {fileID: 2060879952}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6716,6 +6719,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c28abf1d5dc544f0fb0e46fcfa24cd45, type: 3}
   m_Name: 
+--- !u!114 &2060879952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060879945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a447fe9c9f904394ad76d7b3025f4b2, type: 3}
+  m_Name: 
+  vignetteIntensity: 3.9000001
+  blurAmount: .5
+  blurSpread: 1.5
+  noiseIntensity: .200000003
+  noiseScale: 1.20000005
+  shader: {fileID: 4800000, guid: 1f31e1939a6d94f90af6a748b12ffac1, type: 3}
+  noiseTexture: {fileID: 2800000, guid: ffa9c02760c2b4e8eb9814ec06c4b05b, type: 3}
 --- !u!1 &2085979301
 GameObject:
   m_ObjectHideFlags: 0
